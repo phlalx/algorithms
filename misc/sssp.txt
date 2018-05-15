@@ -1,0 +1,28 @@
+Single source shortest path
+---------------------------
+
+Usually, we maintain a structure:
+
+d[node] = distance
+p[node] = parent
+
+Updating these arrays mean "relaxing" an edge the edge
+node -> parent.
+
+In BFS or Dijkstra, this happens only one, when we udpate from infinity
+to the new, minimal distance.
+
+In Bellman-Ford, this can happens arbitrarily many times.
+
+Bellman-ford is more general, the algorithms can detect negative-cycle,
+in which case, there can't be shortest path in a graph.
+
+Bellman ford complexity is O(E.V). We relax every edges, E - 1 times.
+After i steps, each distance is the best we can get with a path of length i.
+A path without loop can be of length E - 1 at most.
+
+To see if a graph has a negative cycle, we check that the distances computed
+by bellman-ford make sense.
+
+If we have multiple sources, we can add them in the initial queue for the BFS,
+ or set their distances to 0 in bellman ford.  Does it work for dijkstra?

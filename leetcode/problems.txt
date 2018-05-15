@@ -1,0 +1,1738 @@
+[1] Two Sum Easy
+Given an array of integers, return indices of the two numbers such that they
+add up to a specific target. You may assume that each input would have
+exactly one solution, and you may not use the same element twice.
+
+Given nums = [2, 7, 11, 15], target = 9,
+
+[4] Median of Two Sorted Arrays Hard
+There are two sorted arrays nums1 and nums2 of size m and n respectively.
+Find the median of the two sorted arrays. The overall run time complexity
+should be O(log (m+n)). You may assume nums1 and nums2 cannot be both empty.
+
+nums1 = [1, 3] nums2 = [2]. The median is 2.0
+nums1 = [1, 2] nums2 = [3, 4]. The median is (2 + 3)/2 = 2.5
+
+[7] Reverse Integer Easy
+Given a 32-bit signed integer, reverse digits of an integer.
+
+Input: 123 Output: 321
+Input: -123 Output: -321
+
+[10] Regular Expression Matching Hard
+Given an input string (s) and a pattern (p), implement regular expression
+matching with support for '.' and '*'. '.' Matches any single character.'*'
+Matches zero or more of the preceding element. The matching should cover the
+entire input string (not partial). s could be empty and contains only
+lowercase letters a-z. p could be empty and contains only lowercase letters
+a-z, and characters like . or *.
+
+Input: s = "aa" p = "a" Output: false Explanation: "a" does not match the
+entire string "aa".
+Input: s = "aa" p = "a*" Output: true Explanation: '*' means zero or more of
+the precedeng element, 'a'. Therefore, by repeating 'a' once, it becomes
+"aa".
+Input: s = "ab" p = ".*" Output: true Explanation: ".*" means "zero or more
+(*) of any character (.)".
+Input: s = "aab" p = "c*a*b" Output: true Explanation: c can be repeated 0
+times, a can be repeated 1 time. Therefore it matches "aab".
+
+[13] Roman to Integer Easy
+Roman numerals are represented by seven different symbols: I, V, X, L, C, D and
+ M. Symbol Value I 1 V 5 X 10 L 50 C 100 D 500 M 1000.
+
+Given a roman numeral, convert it to an integer. Input is guaranteed to be
+within the range from 1 to 3999.
+
+[15] 3Sum Medium
+Given an array nums of n integers, are there elements a, b, c in nums such
+that a + b + c = 0? Find all unique triplets in the array which gives the sum
+of zero.
+
+[-1, 0, 1, 2, -1, -4] -> [ [-1, 0, 1], [-1, -1, 2] ]
+
+[17] Letter Combinations of a Phone Number Medium
+Given a string containing digits from 2-9 inclusive, return all possible
+letter combinations that the number could represent.
+Input: "23" Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
+
+[20] Valid Parentheses Easy
+Given a string containing just the characters '(', ')', '{', '}', '[' and
+']', determine if the input string is valid.
+
+[22] Generate Parentheses Medium
+Given n pairs of parentheses, write a function to generate all combinations
+of well-formed parentheses.
+
+[23] Merge k Sorted Lists Hard
+Merge k sorted linked lists and return it as one sorted list. Analyze and
+describe its complexity.
+Input: [ 1->4->5, 1->3->4, 2->6 ] Output: 1->1->2->3->4->4->5->6
+
+[25] Reverse Nodes in k-Group Hard
+Given a linked list, reverse the nodes of a linked list k at a time and
+return its modified list.
+
+k is a positive integer and is less than or equal to the length of the linked
+list. If the number of nodes is not a multiple of k then left-out nodes in
+the end should remain as it is.
+
+Given this linked list: 1->2->3->4->5
+For k = 2, you should return: 2->1->4->3->5
+For k = 3, you should return: 3->2->1->4->5
+
+[26] Remove Duplicates from Sorted Array Easy
+Given a sorted array nums, remove the duplicates in-place such that each
+element appear only once and return the new length.
+It doesn't matter what values are set beyond the returned length.
+
+[28] Implement strStr() Easy
+Return the index of the first occurrence of needle in haystack, or -1 if
+needle is not part of haystack.
+
+[31] Next Permutation Medium
+Implement next permutation, which rearranges numbers into the
+lexicographically next greater permutation of numbers.
+If such arrangement is not possible, it must rearrange it as the lowest
+possible order (ie, sorted in ascending order).
+
+[32] Longest Valid Parentheses Hard
+Given a string containing just the characters '(' and ')', find the length of
+the longest valid (well-formed) parentheses substring.
+Input: "(()" Output: 2 Explanation: The longest valid parentheses substring
+is "()"
+Input: ")()())" Output: 4 Explanation: The longest valid parentheses
+substring is "()()"
+
+[33] Search in Rotated Sorted Array Medium
+Suppose an array sorted in ascending order is rotated at some pivot unknown
+to you beforehand. You are given a target value to search. If found in the
+array return its index, otherwise return -1. You may assume no duplicate
+exists in the array.
+
+[38] Count and Say Easy
+The count-and-say sequence is the sequence of integers with the first five
+terms as following: 1. 1 2. 11 3. 21 4. 1211 5. 111221
+
+[42] Trapping Rain Water Hard
+Given n non-negative integers representing an elevation map where the width
+of each bar is 1, compute how much water it is able to trap after raining.
+The above elevation map is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In
+this case, 6 units of rain water (blue section) are being trapped. Thanks
+Marcos for contributing this image!
+Input: [0,1,0,2,1,0,1,3,2,1,2,1] Output: 6
+
+[43] Multiply Strings Medium
+Given two non-negative integers num1 and num2 represented as strings, return
+the product of num1 and num2, also represented as a string.
+
+[44] Wildcard Matching Hard
+Given an input string (s) and a pattern (p), implement wildcard pattern
+matching with support for '?' and '*'.
+'?' Matches any single character. '*' Matches any sequence of characters
+(including the empty sequence).
+Input: s = "aa" p = "a" Output: false Explanation: "a" does not match the
+entire string "aa".
+Input: s = "aa" p = "*" Output: true Explanation: '*' matches any sequence.
+Input: s = "cb" p = "?a" Output: false Explanation: '?' matches 'c', but the
+second letter is 'a', which does not match 'b'.
+
+[49] Group Anagrams Medium
+Given an array of strings, group anagrams together.
+Input: ["eat", "tea", "tan", "ate", "nat", "bat"], Output: [
+["ate","eat","tea"], ["nat","tan"], ["bat"] ]
+
+[50] Pow(x, n) Medium
+Implement pow(x, n), which calculates x raised to the power n (xn).
+Input: 2.00000, -2 Output: 0.25000 Explanation: 2-2 = 1/22 = 1/4 = 0.25
+
+[51] N-Queens Hard
+The n-queens puzzle is the problem of placing n queens on an n×n chessboard
+such that no two queens attack each other.
+Given an integer n, return all distinct solutions to the n-queens puzzle.
+Each solution contains a distinct board configuration of the n-queens'
+placement, where 'Q' and '.' both indicate a queen and an empty space
+respectively.
+
+[52] N-Queens II Hard
+The n-queens puzzle is the problem of placing n queens on an n×n chessboard
+such that no two queens attack each other.
+Given an integer n, return the number of distinct solutions to the n-queens
+puzzle.
+
+[54] Spiral Matrix Medium
+Given a matrix of m x n elements (m rows, n columns), return all elements of
+the matrix in spiral order.
+Input: [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ] Output: [1,2,3,6,9,8,7,4,5]
+Input: [ [1, 2, 3, 4], [5, 6, 7, 8], [9,10,11,12] ] Output:
+[1,2,3,4,8,12,11,10,9,5,6,7]
+
+[56] Merge Intervals Medium
+Given a collection of intervals, merge all overlapping intervals.
+Input: [[1,3],[2,6],[8,10],[15,18]] Output: [[1,6],[8,10],[15,18]]
+Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].
+
+[57] Insert Interval Hard
+Given a set of non-overlapping intervals, insert a new interval into the
+intervals (merge if necessary).
+
+You may assume that the intervals were initially sorted according to their
+start times.
+Input: intervals = [[1,3],[6,9]], newInterval = [2,5] Output: [[1,5],[6,9]]
+Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]
+Output: [[1,2],[3,10],[12,16]] Explanation: Because the new interval [4,8]
+overlaps with [3,5],[6,7],[8,10].
+
+[66] Plus One Easy
+Given a non-empty array of digits representing a non-negative integer, plus
+one to the integer.
+
+[67] Add Binary Easy
+Given two binary strings, return their sum (also a binary string).
+
+[68] Text Justification Hard
+Given an array of words and a width maxWidth, format the text such that each
+line has exactly maxWidth characters and is fully (left and right) justified.
+You should pack your words in a greedy approach; that is, pack as many words
+as you can in each line. Pad extra spaces ' ' when necessary so that each
+line has exactly maxWidth characters. Extra spaces between words should be
+distributed as evenly as possible. If the number of spaces on a line do not
+divide evenly between words, the empty slots on the left will be assigned
+more spaces than the slots on the right. For the last line of text, it should
+be left justified and no extra space is inserted between words.
+
+Input: words = ["This", "is", "an", "example", "of", "text",
+"justification."] maxWidth = 16 Output: [ "This is an", "example of text",
+"justification. " ]
+
+Input: words = ["What","must","be","acknowledgment","shall","be"] maxWidth =
+16 Output: [ "What must be", "acknowledgment ", "shall be " ] Explanation:
+Note that the last line is "shall be " instead of "shall be", because the
+last line must be left-justified instead of fully-justified. Note that the
+second line is also left-justified becase it contains only one word.
+
+[69] Sqrt(x) Easy
+
+Compute and return the square root of x, where x is guaranteed to be a
+non-negative integer. Since the return type is an integer, the decimal digits
+are truncated and only the integer part of the result is returned.
+
+[71] Simplify Path Medium
+Given an absolute path for a file (Unix-style), simplify it. Or in other
+words, convert it to the canonical path.
+
+Input: "/home/" Output: "/home" Explanation: Note that there is no trailing
+slash after the last directory name.
+Input: "/../" Output: "/" Explanation: Going one level up from the root
+directory is a no-op, as the root level is the highest level you can go.
+Input: "/home//foo/" Output: "/home/foo" Explanation: In the canonical path,
+multiple consecutive slashes are replaced by a single one.
+
+[74] Search a 2D Matrix Medium
+Write an efficient algorithm that searches for a value in an m x n matrix.
+This matrix has the following properties: Integers in each row are sorted
+from left to right. The first integer of each row is greater than the last
+integer of the previous row.
+
+Input: matrix = [ [1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 50] ] target =
+3 Output: true
+Input: matrix = [ [1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 50] ] target =
+13 Output: false
+
+[75] Sort Colors Medium
+Given an array with n objects colored red, white or blue, sort them in-place
+so that objects of the same color are adjacent, with the colors in the order
+red, white and blue. Here, we will use the integers 0, 1, and 2 to represent
+the color red, white, and blue respectively. Note: You are not suppose to use
+the library's sort function for this problem.
+
+Input: [2,0,2,1,1,0] Output: [0,0,1,1,2,2]
+
+A rather straight forward solution is a two-pass algorithm using counting
+sort. First, iterate the array counting number of 0's, 1's, and 2's, then
+overwrite array with total number of 0's, then 1's and followed by 2's. Could
+you come up with a one-pass algorithm using only constant space?
+
+[76] Minimum Window Substring Hard
+Given a string S and a string T, find the minimum window in S which will
+contain all the characters in T in complexity O(n).
+
+Input: S = "ADOBECODEBANC", T = "ABC" Output: "BANC"
+
+[78] Subsets Medium
+Given a set of distinct integers, nums, return all possible subsets (the
+power set). The solution set must not contain duplicate subsets.
+
+Input: nums = [1,2,3] Output: [ [3], [1], [2], [1,2,3], [1,3], [2,3], [1,2],
+[] ]
+
+[79] Word Search Medium
+Given a 2D board and a word, find if the word exists in the grid.
+
+The word can be constructed from letters of sequentially adjacent cell, where
+"adjacent" cells are those horizontally or vertically neighboring. The same
+letter cell may not be used more than once.
+
+[80] Remove Duplicates from Sorted Array II Medium
+Given a sorted array nums, remove the duplicates in-place such that
+duplicates appeared at most twice and return the new length. O(1) extra
+memory.
+
+[85] Maximal Rectangle Hard
+Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle
+containing only 1's and return its area.
+
+[88] Merge Sorted Array Easy
+Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as
+one sorted array. The number of elements initialized in nums1 and nums2 are m
+and n respectively. You may assume that nums1 has enough space (size that is
+greater or equal to m + n) to hold additional elements from nums2.
+
+[90] Subsets II Medium
+Given a collection of integers that might contain duplicates, nums, return
+all possible subsets (the power set). The solution set must not contain
+duplicate subsets.
+
+[91] Decode Ways Medium
+A message containing letters from A-Z is being encoded to numbers using the
+following mapping:
+'A' -> 1 'B' -> 2 ... 'Z' -> 26
+Given a non-empty string containing only digits, determine the total number
+of ways to decode it.
+
+[94] Binary Tree Inorder Traversal Medium
+Given a binary tree, return the inorder traversal of its nodes' values.
+Follow up: Recursive solution is trivial, could you do it iteratively?
+
+[97] Interleaving String Hard
+Given s1, s2, s3, find whether s3 is formed by the interleaving of s1 and s2.
+
+[98] Validate Binary Search Tree Medium
+Given a binary tree, determine if it is a valid binary search tree (BST).
+
+[102] Binary Tree Level Order Traversal Medium
+Given a binary tree, return the level order traversal of its nodes' values.
+(ie, from left to right, level by level).
+
+[117] Populating Next Right Pointers in Each Node II Medium
+Given a binary tree Populate each next pointer to point to its next right
+node. If there is no next right node, the next pointer should be set to NULL.
+Recursive approach is fine, implicit stack space does not count as extra
+space for this problem.
+
+[121] Best Time to Buy and Sell Stock Easy
+Say you have an array for which the ith element is the price of a given stock
+on day i. If you were only permitted to complete at most one transaction
+(i.e., buy one and sell one share of the stock), design an algorithm to find
+the maximum profit. Yyou cannot sell a stock before you buy one.
+
+[122] Best Time to Buy and Sell Stock II Easy
+Say you have an array for which the ith element is the price of a given stock
+on day i. Design an algorithm to find the maximum profit. You may complete as
+many transactions as you like (i.e., buy one and sell one share of the stock
+multiple times). Note: You may not engage in multiple transactions at the
+same time (i.e., you must sell the stock before you buy again).
+
+[125] Valid Palindrome Easy
+Given a string, determine if it is a palindrome, considering only
+alphanumeric characters and ignoring cases.
+
+[127] Word Ladder Medium
+Given two words (beginWord and endWord), and a dictionary's word list, find
+the length of shortest transformation sequence from beginWord to endWord,
+such that: Only one letter can be changed at a time. Each transformed word
+must exist in the word list. Note that beginWord is not a transformed word.
+
+[128] Longest Consecutive Sequence Hard
+Given an unsorted array of integers, find the length of the longest
+consecutive elements sequence. Your algorithm should run in O(n) complexity.
+
+[139] Word Break
+Given a non-empty string s and a dictionary wordDict containing a list of
+non-empty words, determine if s can be segmented into a space-separated
+sequence of one or more dictionary words. Note: The same word in the
+dictionary may be reused multiple times in the segmentation. You may assume
+the dictionary does not contain duplicate words.
+
+[140] Word Break II Hard
+Given a non-empty string s and a dictionary wordDict containing a list of
+non-empty words, add spaces in s to construct a sentence where each word is a
+valid dictionary word. Return all such possible sentences. The same word in
+the dictionary may be reused multiple times in the segmentation. You may
+assume the dictionary does not contain duplicate words. Input: s =
+"catsanddog" wordDict = ["cat", "cats", "and", "sand", "dog"] Output: [ "cats
+and dog", "cat sand dog" ]
+
+[146] LRU Cache Hard
+Design and implement a data structure for Least Recently Used (LRU) cache. It
+should support the following operations: get and put. get(key) - Get the
+value (will always be positive) of the key if the key exists in the cache,
+otherwise return -1. put(key, value) - Set or insert the value if the key is
+not already present. When the cache reached its capacity, it should
+invalidate the least recently used item before inserting a new item. Follow
+up: Could you do both operations in O(1) time complexity?
+
+[155] Min Stack Easy
+Design a stack that supports push, pop, top, and retrieving the minimum
+element in constant time.
+
+[162] Find Peak Element Medium
+A peak element is an element that is greater than its neighbors. Given an
+input array nums, where nums[i] ≠ nums[i+1], find a peak element and return
+its index. The array may contain multiple peaks, in that case return the
+index to any one of the peaks is fine. You may imagine that nums[-1] =
+nums[n] = -∞. Your solution should be in logarithmic complexity.
+
+[168] Excel Sheet Column Title Easy
+Given a positive integer, return its corresponding column title as appear in
+an Excel sheet.
+1 -> A 2 -> B 3 -> C ... 26 -> Z 27 -> AA 28 -> AB ...
+
+[173] Binary Search Tree Iterator Medium
+Implement an iterator over a binary search tree (BST). Your iterator will be
+initialized with the root node of a BST. Calling next() will return the next
+smallest number in the BST. next() and hasNext() should run in average O(1)
+time and uses O(h) memory, where h is the height of the tree. You may assume
+that next() call will always be valid, that is, there will be at least a next
+smallest number in the BST when next() is called.
+
+[200] Number of Islands Medium
+Given a 2d grid map of '1's (land) and '0's (water), count the number of
+islands. An island is surrounded by water and is formed by connecting
+adjacent lands horizontally or vertically. You may assume all four edges of
+the grid are all surrounded by water.
+
+[206] Reverse Linked List Easy
+Reverse a singly linked list. Iteratively and recursively.
+
+[208] Implement Trie (Prefix Tree) Medium
+Implement a trie with insert, search, and startsWith methods.
+
+[209] Minimum Size Subarray Sum Medium
+Given an array of n positive integers and a positive integer s, find the
+minimal length of a contiguous subarray of which the sum ≥ s. If there isn't
+one, return 0 instead. O(n) and O(n.log(n))
+
+[210] Course Schedule II Medium
+There are a total of n courses you have to take, labeled from 0 to n-1. Some
+courses may have prerequisites, for example to take course 0 you have to
+first take course 1, which is expressed as a pair: [0,1] Given the total
+number of courses and a list of prerequisite pairs, return the ordering of
+courses you should take to finish all courses. There may be multiple correct
+orders, you just need to return one of them. If it is impossible to finish
+all courses, return an empty array. Note: The input prerequisites is a graph
+represented by a list of edges, not adjacency matrices.
+
+[211] Add and Search Word - Data structure design - Medium
+Design a data structure that supports the following two operations:
+void addWord(word) bool search(word)
+search(word) can search a literal word or a regular expression string
+containing only letters a-z or .. A . means it can represent any one letter.
+
+[212] Word Search II Hard
+Given a 2D board and a list of words from the dictionary, find all words in
+the board. Each word must be constructed from letters of sequentially
+adjacent cell, where "adjacent" cells are those horizontally or vertically
+neighboring. The same letter cell may not be used more than once in a word.
+
+Input: board = [ ['o','a','a','n'], ['e','t','a','e'], ['i','h','k','r'],
+['i','f','l','v'] ] words = ["oath","pea","eat","rain"]
+Output: ["eat","oath"]
+
+[214] Shortest Palindrome Hard
+Given a string s, you are allowed to convert it to a palindrome by adding
+characters in front of it. Find and return the shortest palindrome you can
+find by performing this transformation.
+
+Input: "aacecaaa" Output: "aaacecaaa"
+Input: "abcd" Output: "dcbabcd"
+
+[215] Kth Largest Element in an Array Medium
+Find the kth largest element in an unsorted array. Note that it is the kth
+largest element in the sorted order, not the kth distinct element.
+
+[218] The Skyline Problem Hard
+A city's skyline is the outer contour of the silhouette formed by all the
+buildings in that city when viewed from a distance. Now suppose you are given
+the locations and height of all the buildings as shown on a cityscape photo
+(Figure A), write a program to output the skyline formed by these buildings
+collectively (Figure B).
+
+The geometric information of each building is represented by a triplet of
+integers [Li, Ri, Hi], where Li and Ri are the x coordinates of the left and
+right edge of the ith building, respectively, and Hi is its height. It is
+guaranteed that 0 ≤ Li, Ri ≤ INT_MAX, 0 < Hi ≤ INT_MAX, and Ri - Li > 0. You
+may assume all buildings are perfect rectangles grounded on an absolutely
+flat surface at height 0.
+
+For instance, the dimensions of all buildings in Figure A are recorded as: [
+[2 9 10], [3 7 15], [5 12 12], [15 20 10], [19 24 8] ] .
+
+The output is a list of "key points" (red dots in Figure B) in the format of
+[ [x1,y1], [x2, y2], [x3, y3], ... ] that uniquely defines a skyline. A key
+point is the left endpoint of a horizontal line segment. Note that the last
+key point, where the rightmost building ends, is merely used to mark the
+termination of the skyline, and always has zero height. Also, the ground in
+between any two adjacent buildings should be considered part of the skyline
+contour.
+For instance, the skyline in Figure B should be represented as:[ [2 10], [3
+15], [7 12], [12 0], [15 10], [20 8], [24, 0] ].
+
+The number of buildings in any input list is guaranteed to be in the range
+[0, 10000]. The input list is already sorted in ascending order by the left x
+position Li. The output list must be sorted by the x position. There must be
+no consecutive horizontal lines of equal height in the output skyline. For
+instance, [...[2 3], [4 5], [7 5], [11 5], [12 7]...] is not acceptable; the
+three lines of height 5 should be merged into one in the final output as
+such: [...[2 3], [4 5], [12 7], ...]
+
+[221] Maximal Square Medium
+Given a 2D binary matrix filled with 0's and 1's, find the largest square
+containing only 1's and return its area.
+
+Input: 1 0 1 0 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 Output: 4
+
+[224] Basic Calculator Hard
+The expression string may contain open ( and closing parentheses ), the plus
++ or minus sign -, non-negative integers and empty spaces .
+
+Input: "1 + 1" Output: 2
+Input: " 2-1 + 2 " Output: 3
+
+[228] Summary Ranges Medium
+Given a sorted integer array without duplicates, return the summary of its
+ranges.
+
+Input: [0,1,2,4,5,7] Output: ["0->2","4->5","7"] Explanation: 0,1,2 form a
+continuous range; 4,5 form a continuous range.
+Input: [0,2,3,4,6,8,9] Output: ["0","2->4","6","8->9"] Explanation: 2,3,4
+form a continuous range; 8,9 form a continuous range.
+
+[230] Kth Smallest Element in a BST Medium
+Given a binary search tree, write a function kthSmallest to find the kth
+smallest element in it.
+Input: root = [3,1,4,null,2], k = 1 3 / \ 1 4 \ 2 Output: 1
+Input: root = [5,3,6,2,4,null,null,1], k = 3 5 / \ 3 6 / \ 2 4 / 1 Output: 3
+Follow up: What if the BST is modified (insert/delete operations) often and
+you need to find the kth smallest frequently? How would you optimize the
+kthSmallest routine?
+
+[231] Power of Two Easy
+Given an integer, write a function to determine if it is a power of two.
+
+[234] Palindrome Linked List Easy
+Given a singly linked list, determine if it is a palindrome.
+O(n) time and O(1)
+
+[236] Lowest Common Ancestor of a Binary Tree Medium
+Given a binary tree, find the lowest common ancestor (LCA) of two given nodes
+in the tree. All of the nodes' values will be unique. p and q are different
+and both values will exist in the binary tree.
+
+[238] Product of Array Except Self Medium
+Given an array nums of n integers where n > 1, return an array output such
+that output[i] is equal to the product of all the elements of nums except
+nums[i].
+Input: [1,2,3,4] Output: [24,12,8,6]
+Note: Please solve it without division and in O(n).
+Follow up: Could you solve it with constant space complexity? (The output
+array does not count as extra space for the purpose of space complexity
+analysis.)
+
+[239] Sliding Window Maximum Hard
+Given an array nums, there is a sliding window of size k which is moving from
+the very left of the array to the very right. You can only see the k numbers
+in the window. Each time the sliding window moves right by one position.
+Return the max sliding window.
+Input: nums = [1,3,-1,-3,5,3,6,7], and k = 3 Output: [3,3,5,5,6,7]
+Explanation:
+Window position Max
+--------------- -----
+[1 3 -1] -3 5 3 6 7 3 1 [3 -1 -3] 5 3 6 7 3 1 3 [-1 -3 5] 3 6 7 5 1 3 -1 [-3
+5 3] 6 7 5 1 3 -1 -3 [5 3 6] 7 6 1 3 -1 -3 5 [3 6 7] 7
+Note: You may assume k is always valid, 1 ≤ k ≤ input array's size for
+non-empty array.
+Follow up: Could you solve it in linear time?
+
+[240] Search a 2D Matrix II Medium
+Write an efficient algorithm that searches for a value in an m x n matrix.
+This matrix has the following properties:
+
+Integers in each row are sorted in ascending from left to right. Integers in
+each column are sorted in ascending from top to bottom.
+
+[257] Binary Tree Paths Easy
+Given a binary tree, return all root-to-leaf paths.
+
+[263] Ugly Number Easy
+Write a program to check whether a given number is an ugly number.
+Ugly numbers are positive numbers whose prime factors only include 2, 3, 5.
+
+[273] Integer to English Words Hard
+Convert a non-negative integer to its english words representation. Given
+input is guaranteed to be less than 231 - 1.
+Input: 12345 Output: "Twelve Thousand Three Hundred Forty Five"
+
+[274] H-Index Medium
+Given an array of citations (each citation is a non-negative integer) of a
+researcher, write a function to compute the researcher's h-index.
+
+According to the definition of h-index on Wikipedia: "A scientist has index h
+if h of his/her N papers have at least h citations each, and the other N − h
+papers have no more than h citations each."
+
+[279] Perfect Squares Medium
+Given a positive integer n, find the least number of perfect square numbers
+(for example, 1, 4, 9, 16, ...) which sum to n.
+
+[282] Expression Add Operators Hard
+Given a string that contains only digits 0-9 and a target value, return all
+possibilities to add binary operators (not unary) +, -, or * between the
+digits so they evaluate to the target value.
+Input: num = "123", target = 6 Output: ["1+2+3", "1*2*3"]
+
+[283] Move Zeroes Easy
+Given an array nums, write a function to move all 0's to the end of it while
+maintaining the relative order of the non-zero elements.
+You must do this in-place without making a copy of the array. Minimize the
+total number of operations.
+
+[284] Peeking Iterator Medium
+Given an Iterator class interface with methods: next() and hasNext(), design
+and implement a PeekingIterator that support the peek() operation -- it
+essentially peek() at the element that will be returned by the next call to
+next().
+
+[289] Game of Life Medium
+Given a board with m by n cells, each cell has an
+initial state live (1) or dead (0). Each cell interacts with its eight
+neighbors (horizontal, vertical, diagonal) using the following four rules
+Any live cell with fewer than two
+live neighbors dies, as if caused by under-population. Any live cell with two
+or three live neighbors lives on to the next generation. Any live cell with
+more than three live neighbors dies, as if by over-population.. Any dead cell
+with exactly three live neighbors becomes a live cell, as if by reproduction.
+Write a function to compute the next state (after one update) of the board
+given its current state. The next state is created by applying the above
+rules simultaneously to every cell in the current state, where births and
+deaths occur simultaneously. In-place. Infinite board.
+
+[295] Find Median from Data Stream Hard
+Median is the middle value in an ordered integer list. If the size of the
+list is even, there is no middle value. So the median is the mean of the two
+middle value. For example,
+Design a data structure that supports the following two operations:
+void addNum(int num) - Add a integer number from the data stream to the data
+structure. double findMedian() - Return the median of all elements so far.
+If all integer numbers from the stream are between 0 and 100, how would you
+optimize it? If 99% of all integer numbers from the stream are between 0 and
+100, how would you optimize it?
+
+[297] Serialize and Deserialize Binary Tree Hard
+Serialization is the process of converting a data structure or object into a
+sequence of bits so that it can be stored in a file or memory buffer, or
+transmitted across a network connection link to be reconstructed later in the
+same or another computer environment.
+Design an algorithm to serialize and deserialize a binary tree. There is no
+restriction on how your serialization/deserialization algorithm should work.
+You just need to ensure that a binary tree can be serialized to a string and
+this string can be deserialized to the original tree structure.
+
+[301] Remove Invalid Parentheses Hard
+Remove the minimum number of invalid parentheses in order to make the input
+string valid. Return all possible results. Note: The input string may contain
+letters other than the parentheses ( and ).
+
+[310] Minimum Height Trees Medium
+For an undirected graph with tree characteristics, we can choose any node as
+the root. The result graph is then a rooted tree. Among all possible rooted
+trees, those with minimum height are called minimum height trees (MHTs).
+Given such a graph, write a function to find all the MHTs and return a list
+of their root labels. Format The graph contains n nodes which are labeled
+from 0 to n - 1. You will be given the number n and a list of undirected
+edges (each edge is a pair of labels). You can assume that no duplicate edges
+will appear in edges. Since all edges are undirected, [0, 1] is the same as
+[1, 0] and thus will not appear together in edges.
+
+[312] Burst Balloons Hard
+Given n balloons, indexed from 0 to n-1. Each balloon is painted with a
+number on it represented by array nums. You are asked to burst all the
+balloons. If the you burst balloon i you will get nums[left] * nums[i] *
+nums[right] coins. Here left and right are adjacent indices of i. After the
+burst, the left and right then becomes adjacent.
+Find the maximum coins you can collect by bursting the balloons wisely.
+You may imagine nums[-1] = nums[n] = 1. They are not real therefore you can
+not burst them. 0 ≤ n ≤ 500, 0 ≤ nums[i] ≤ 100
+
+[315] Count of Smaller Numbers After Self Hard
+You are given an integer array nums and you have to return a new counts
+array. The counts array has the property where counts[i] is the number of
+smaller elements to the right of nums[i].
+Input: [5,2,6,1] Output: [2,1,1,0] Explanation: To the right of 5 there are 2
+smaller elements (2 and 1). To the right of 2 there is only 1 smaller element
+(1). To the right of 6 there is 1 smaller element (1). To the right of 1
+there is 0 smaller element.
+
+[316] Remove Duplicate Letters Hard
+Given a string which contains only lowercase letters, remove duplicate
+letters so that every letter appear once and only once. You must make sure
+your result is the smallest in lexicographical order among all possible
+results.
+
+[321] Create Maximum Number Hard
+Given two arrays of length m and n with digits 0-9 representing two numbers.
+Create the maximum number of length k <= m + n from digits of the two. The
+relative order of the digits from the same array must be preserved. Return an
+array of the k digits.
+Input: nums1 = [3, 4, 6, 5] nums2 = [9, 1, 2, 5, 8, 3] k = 5 Output: [9, 8,
+6, 5, 3]
+
+[324] Wiggle Sort II Medium
+Given an unsorted array nums, reorder it such that nums[0] < nums[1] >
+nums[2] < nums[3]....
+Input: nums = [1, 5, 1, 1, 6, 4] Output: One possible answer is [1, 4, 1, 5,
+1, 6].
+Follow Up: Can you do it in O(n) time and/or in-place with O(1) extra space?
+
+[326] Power of Three Easy
+Given an integer, write a function to determine if it is a power of three.
+
+[327] Count of Range Sum Hard
+Given an integer array nums, return the number of range sums that lie in
+[lower, upper] inclusive. Range sum S(i, j) is defined as the sum of the
+elements in nums between indices i and j (i ≤ j), inclusive.
+Input: nums = [-2,5,-1], lower = -2, upper = 2, Output: 3 Explanation: The
+three ranges are : [0,0], [2,2], [0,2] and their respective sums are: -2, -1,
+2.
+
+[329] Longest Increasing Path in a Matrix Hard
+Given an integer matrix, find the length of the longest increasing path.
+From each cell, you can either move to four directions: left, right, up or
+down. You may NOT move diagonally or move outside of the boundary (i.e.
+wrap-around is not allowed).
+
+[330] Patching Array Hard
+Given a sorted positive integer array nums and an integer n, add/patch
+elements to the array such that any number in range [1, n] inclusive can be
+formed by the sum of some elements in the array. Return the minimum number of
+patches required.
+
+[331] Verify Preorder Serialization of a Binary Tree Medium
+One way to serialize a binary tree is to use pre-order traversal. When we
+encounter a non-null node, we record the node's value. If it is a null node,
+we record using a sentinel value such as #.
+_9_ / \ 3 2 / \ / \ 4 1 # 6 / \ / \ / \
+# # # # # #
+For example, the above binary tree can be serialized to the string
+"9,3,4,#,#,1,#,#,2,#,6,#,#", where # represents a null node. Given a string
+of comma separated values, verify whether it is a correct preorder traversal
+serialization of a binary tree. Find an algorithm without reconstructing the
+tree. Each comma separated value in the string must be either an integer or a
+character '#' representing null pointer. You may assume that the input format
+is always valid, for example it could never contain two consecutive commas
+such as "1,,3".
+
+[334] Increasing Triplet Subsequence Medium
+Given an unsorted array return whether an increasing subsequence of length 3
+exists or not in the array. Formally the function should:
+Return true if there exists i, j, k such that arr[i] < arr[j] < arr[k] given
+0 ≤ i < j < k ≤ n-1 else return false. O(n) time complexity and O(1) space
+
+[336] Palindrome Pairs Hard
+Given a list of unique words, find all pairs of distinct indices (i, j) in
+the given list, so that the concatenation of the two words, i.e. words[i] +
+words[j] is a palindrome.
+
+[341] Flatten Nested List Iterator Medium
+Given a nested list of integers, implement an iterator to flatten it.
+Each element is either an integer, or a list -- whose elements may also be
+integers or other lists.
+Input: [[1,1],2,[1,1]] Output: [1,1,2,1,1] Explanation: By calling next
+repeatedly until hasNext returns false, the order of elements returned by
+next should be: [1,1,2,1,1].
+
+[345] Reverse Vowels of a String Easy
+Write a function that takes a string as input and reverse only the vowels of
+a string.
+
+[354] Russian Doll Envelopes Hard
+You have a number of envelopes with widths and heights given as a pair of
+integers (w, h). One envelope can fit into another if and only if both the
+width and height of one envelope is greater than the width and height of the
+other envelope. What is the maximum number of envelopes can you Russian doll?
+(put one inside other) Note: Rotation is not allowed.
+
+Input: [[5,4],[6,4],[6,7],[2,3]] Output: 3 Explanation: The maximum number of
+envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,7]).
+
+[357] Count Numbers with Unique Digits Medium
+Given a non-negative integer n, count all numbers with unique digits, x,
+where 0 ≤ x < 10n.
+
+Input: 2 Output: 91 Explanation: The answer should be the total numbers in
+the range of 0 ≤ x < 100, excluding 11,22,33,44,55,66,77,88,99
+
+[363] Max Sum of Rectangle No Larger Than K Hard
+Given a non-empty 2D matrix matrix and an integer k, find the max sum of a
+rectangle in the matrix such that its sum is no larger than k.
+
+Input: matrix = [[1,0,1],[0,-2,3]], k = 2 Output: 2 Explanation: Because the
+sum of rectangle [[0, 1], [-2, 3]] is 2, and 2 is the max number no larger
+than k (k = 2).
+
+The rectangle inside the matrix must have an area > 0. What if the number of
+rows is much larger than the number of columns?
+
+[373] Find K Pairs with Smallest Sums Medium
+You are given two integer arrays nums1 and nums2 sorted in ascending order
+and an integer k. Define a pair (u,v) which consists of one element from the
+first array and one element from the second array. Find the k pairs
+(u1,v1),(u2,v2) ...(uk,vk) with the smallest sums.
+
+Input: nums1 = [1,7,11], nums2 = [2,4,6], k = 3 Output: [[1,2],[1,4],[1,6]]
+Explanation: The first 3 pairs are returned from the sequence:
+[1,2],[1,4],[1,6],[7,2],[7,4],[11,2],[7,6],[11,4],[11,6]
+
+[377] Combination Sum IV Medium
+Given an integer array with all positive numbers and no duplicates, find the
+number of possible combinations that add up to a positive integer target.
+Follow up: What if negative numbers are allowed in the given array? How does
+it change the problem? What limitation we need to add to the question to
+allow negative numbers?
+
+[378] Kth Smallest Element in a Sorted Matrix Medium
+Given a n x n matrix where each of the rows and columns are sorted in
+ascending order, find the kth smallest element in the matrix.
+Note that it is the kth smallest element in the sorted order, not the kth
+distinct element.
+
+matrix = [ [ 1, 5, 9], [10, 11, 13], [12, 13, 15] ], k = 8, return 13.
+
+[380] Insert Delete GetRandom O(1) Medium
+Design a data structure that supports all following operations in average
+O(1) time.
+insert(val): Inserts an item val to the set if not already present.
+remove(val): Removes an item val from the set if present. getRandom: Returns
+a random element from current set of elements. Each element must have the
+same probability of being returned.
+
+[382] Linked List Random Node Medium
+Given a singly linked list, return a random node's value from the linked
+list. Each node must have the same probability of being chosen.
+Follow up: What if the linked list is extremely large and its length is
+unknown to you? Could you solve this efficiently without using extra space?
+
+[389] Find the Difference Easy
+Given two strings s and t which consist of only lowercase letters.
+String t is generated by random shuffling string s and then add one more
+letter at a random position. Find the letter that was added in t.
+
+[391] Perfect Rectangle Hard
+Given N axis-aligned rectangles where N > 0, determine if they all together
+form an exact cover of a rectangular region. Each rectangle is represented as
+a bottom-left point and a top-right point. For example, a unit square is
+represented as [1,1,2,2]. (coordinate of bottom-left point is (1, 1) and
+top-right point is (2, 2)).
+
+[393] UTF-8 Validation Medium
+A character in UTF8 can be from 1 to 4 bytes long, subjected to the following
+rules:
+For 1-byte character, the first bit is a 0, followed by its unicode code. For
+n-bytes character, the first n-bits are all one's, the n+1 bit is 0, followed
+by n-1 bytes with most significant 2 bits being 10.
+This is how the UTF-8 encoding would work:
+Char. number range | UTF-8 octet sequence (hexadecimal) | (binary)
+--------------------+---------------------------------------------
+0000 0000-0000 007F | 0xxxxxxx 0000 0080-0000 07FF | 110xxxxx 10xxxxxx 0000
+0800-0000 FFFF | 1110xxxx 10xxxxxx 10xxxxxx 0001 0000-0010 FFFF | 11110xxx
+10xxxxxx 10xxxxxx 10xxxxxx
+Given an array of integers representing the data, return whether it is a
+valid utf-8 encoding.
+Note: The input is an array of integers. Only the least significant 8 bits of
+each integer is used to store the data. This means each integer represents
+only 1 byte of data.
+
+[394] Decode String Medium
+Given an encoded string, return it's decoded string. The encoding rule is:
+k[encoded_string], where the encoded_string inside the square brackets is
+being repeated exactly k times. Note that k is guaranteed to be a positive
+integer. You may assume that the input string is always valid; No extra white
+spaces, square brackets are well-formed, etc. Furthermore, you may assume
+that the original data does not contain any digits and that digits are only
+for those repeat numbers, k. For example, there won't be input like 3a or
+2[4].
+
+s = "3[a]2[bc]", return "aaabcbc". s = "3[a2[c]]", return "accaccacc". s =
+"2[abc]3[cd]ef", return "abcabccdcdcdef".
+
+[397] Integer Replacement Medium
+Given a positive integer n and you can do operations as follow: If n is even,
+replace n with n/2. If n is odd, you can replace n with either n + 1 or n -
+1. What is the minimum number of replacements needed for n to become 1?
+
+[398] Random Pick Index Medium
+Given an array of integers with possible duplicates, randomly output the
+index of a given target number. You can assume that the given target number
+must exist in the array. Note: The array size can be very large. Solution
+that uses too much extra space will not pass the judge.
+
+[399] Evaluate Division Medium
+Equations are given in the format A / B = k, where A and B are variables
+represented as strings, and k is a real number (floating point number). Given
+some queries, return the answers. If the answer does not exist, return -1.0.
+Example: Given a / b = 2.0, b / c = 3.0. queries are: a / c = ?, b / a = ?, a
+/ e = ?, a / a = ?, x / x = ? . return [6.0, 0.5, -1.0, 1.0, -1.0 ].
+The input is always valid. You may assume that evaluating the queries will
+result in no division by zero and there is no contradiction.
+
+[400] Nth Digit Easy
+Find the nth digit of the infinite integer sequence 1, 2, 3, 4, 5, 6, 7, 8,
+9, 10, 11, ... Note: n is positive and will fit within the range of a 32-bit
+signed integer (n < 231).
+
+[401] Binary Watch Easy
+A binary watch has 4 LEDs on the top which represent the hours (0-11), and
+the 6 LEDs on the bottom represent the minutes (0-59). Each LED represents a
+zero or one, with the least significant bit on the right. For example, the
+above binary watch reads "3:25". Given a non-negative integer n which
+represents the number of LEDs that are currently on, return all possible
+times the watch could represent.
+
+Example: Input: n = 1Return: ["1:00", "2:00", "4:00", "8:00", "0:01", "0:02",
+"0:04", "0:08", "0:16", "0:32"]
+
+The order of output does not matter. The hour must not contain a leading
+zero, for example "01:00" is not valid, it should be "1:00". The minute must
+be consist of two digits and may contain a leading zero, for example "10:2"
+is not valid, it should be "10:02".
+
+[404] Sum of Left Leaves Easy
+Find the sum of all left leaves in a given binary tree.
+
+Example: 3 / \ 9 20 / \ 15 7
+There are two left leaves in the binary tree, with values 9 and 15
+respectively. Return 24.
+
+[406] Queue Reconstruction by Height Medium
+Suppose you have a random list of people standing in a queue. Each person is
+described by a pair of integers (h, k), where h is the height of the person
+and k is the number of people in front of this person who have a height
+greater than or equal to h. Write an algorithm to reconstruct the queue.
+
+[407] Trapping Rain Water II Hard
+Given an m x n matrix of positive integers representing the height of each
+unit cell in a 2D elevation map, compute the volume of water it is able to
+trap after raining. Both m and n are less than 110. The height of each unit
+cell is greater than 0 and is less than 20,000.
+
+Given the following 3x6 height map: [ [1,4,3,1,3,2], [3,2,1,3,2,4],
+[2,3,3,2,3,1] ] Return 4.
+
+[409] Longest Palindrome Easy
+Given a string which consists of lowercase or uppercase letters, find the
+length of the longest palindromes that can be built with those letters. This
+is case sensitive, for example "Aa" is not considered a palindrome here.
+Note: Assume the length of given string will not exceed 1,010.
+
+Input: "abccccdd" Output: 7
+
+[410] Split Array Largest Sum Hard
+Given an array which consists of non-negative integers and an integer m, you
+can split the array into m non-empty continuous subarrays. Write an algorithm
+to minimize the largest sum among these m subarrays. Note: If n is the length
+of array, assume the following constraints are satisfied: 1 ≤ n ≤ 1000 1 ≤ m
+≤ min(50, n)
+
+Input: nums = [7,2,5,10,8] m = 2 Output: 18
+
+[415] Add Strings Easy
+Given two non-negative integers num1 and num2 represented as string, return
+the sum of num1 and num2.
+
+[417] Pacific Atlantic Water Flow Medium
+Given an m x n matrix of non-negative integers representing the height of
+each unit cell in a continent, the "Pacific ocean" touches the left and top
+edges of the matrix and the "Atlantic ocean" touches the right and bottom
+edges. Water can only flow in four directions (up, down, left, or right) from
+a cell to another one with height equal or lower. Find the list of grid
+coordinates where water can flow to both the Pacific and Atlantic ocean.
+Note: The order of returned grid coordinates does not matter. Both m and n
+are less than 150.
+
+[421] Maximum XOR of Two Numbers in an Array Medium
+Given a non-empty array of numbers, a0, a1, a2, … , an-1, where 0 ≤ ai < 231.
+Find the maximum result of ai XOR aj, where 0 ≤ i, j < n. Could you do this
+in O(n) runtime?
+
+Input: [3, 10, 5, 25, 2, 8] Output: 28
+
+[438] Find All Anagrams in a String Easy
+Given a string s and a non-empty string p, find all the start indices of p's
+anagrams in s.Strings consists of lowercase English letters only and the
+length of both strings s and p will not be larger than 20,100. The order of
+output does not matter.
+
+Input: s: "cbaebabacd" p: "abc" Output: [0, 6]
+
+[447] Number of Boomerangs Easy
+Given n points in the plane that are all pairwise distinct, a "boomerang" is
+a tuple of points (i, j, k) such that the distance between i and j equals the
+distance between i and k (the order of the tuple matters).
+Find the number of boomerangs. You may assume that n will be at most 500 and
+coordinates of points are all in the range [-10000, 10000] (inclusive).
+
+Input: [[0,0],[1,0],[2,0]] Output: 2
+
+[448] Find All Numbers Disappeared in an Array Easy
+Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some
+elements appear twice and others appear once.
+Find all the elements of [1, n] inclusive that do not appear in this array.
+Could you do it without extra space and in O(n) runtime? You may assume the
+returned list does not count as extra space.
+
+Input: [4,3,2,7,8,2,3,1] Output: [5,6]
+
+[451] Sort Characters By Frequency Medium
+Given a string, sort it in decreasing order based on the frequency of
+characters.
+
+Input: "tree" Output: "eert"
+
+[459] Repeated Substring Pattern Easy
+Given a non-empty string check if it can be constructed by taking a substring
+of it and appending multiple copies of the substring together. You may assume
+the given string consists of lowercase English letters only and its length
+will not exceed 10000.
+
+Input: "abab" Output: True Explanation: It's the substring "ab" twice.
+
+[460] LFU Cache Hard
+Design and implement a data structure for Least Frequently Used (LFU) cache.
+It should support the following operations: get and put.
+get(key) - Get the value (will always be positive) of the key if the key
+exists in the cache, otherwise return -1. put(key, value) - Set or insert the
+value if the key is not already present. When the cache reaches its capacity,
+it should invalidate the least frequently used item before inserting a new
+item. For the purpose of this problem, when there is a tie (i.e., two or more
+keys that have the same frequency), the least recently used key would be
+evicted. Follow up: Could you do both operations in O(1) time complexity?
+
+[461] Hamming Distance Easy
+The Hamming distance between two integers is the number of positions at which
+the corresponding bits are different.
+
+Given two integers x and y, calculate the Hamming distance.
+
+Input: x = 1, y = 4 Output: 2
+
+[463] Island Perimeter Easy
+You are given a map in form of a two-dimensional integer grid where 1
+represents land and 0 represents water. Grid cells are connected
+horizontally/vertically (not diagonally). The grid is completely surrounded
+by water, and there is exactly one island (i.e., one or more connected land
+cells). The island doesn't have "lakes" (water inside that isn't connected to
+the water around the island). One cell is a square with side length 1. The
+grid is rectangular, width and height don't exceed 100. Determine the
+perimeter of the island.
+
+Input: [[0,1,0,0], [1,1,1,0], [0,1,0,0], [1,1,0,0]] Output: 16
+
+[474] Ones and Zeroes Medium
+In the computer world, use restricted resource you have to generate maximum
+benefit is what we always want to pursue. For now, suppose you are a
+dominator of m 0s and n 1s respectively. On the other hand, there is an array
+with strings consisting of only 0s and 1s. Now your task is to find the
+maximum number of strings that you can form with given m 0s and n 1s. Each 0
+and 1 can be used at most once.
+
+Input: Array = {"10", "0001", "111001", "1", "0"}, m = 5, n = 3 Output: 4
+
+[475] Heaters Easy
+Winter is coming! Your first job during the contest is to design a standard
+heater with fixed warm radius to warm all the houses. Now, you are given
+positions of houses and heaters on a horizontal line, find out minimum radius
+of heaters so that all houses could be covered by those heaters. So, your
+input will be the positions of houses and heaters seperately, and your
+expected output will be the minimum radius standard of heaters.
+
+Input: [1,2,3],[2] Output: 1
+
+[477] Total Hamming Distance Medium
+The Hamming distance between two integers is the number of positions at which
+the corresponding bits are different. Now your job is to find the total
+Hamming distance between all pairs of the given numbers.
+
+Input: 4, 14, 2 Output: 6
+
+[480] Sliding Window Median Hard
+Median is the middle value in an ordered integer list. If the size of the
+list is even, there is no middle value. So the median is the mean of the two
+middle value. Examples: [2,3,4] , the median is 3 [2,3], the median is (2 +
+3) / 2 = 2.5 Given an array nums, there is a sliding window of size k which
+is moving from the very left of the array to the very right. You can only see
+the k numbers in the window. Each time the sliding window moves right by one
+position. Your job is to output the median array for each window in the
+original array. Note: You may assume k is always valid, ie: k is always
+smaller than input array's size for non-empty array.
+
+[482] License Key Formatting Easy
+You are given a license key represented as a string S which consists only
+alphanumeric character and dashes. The string is separated into N+1 groups by
+N dashes. Given a number K, we would want to reformat the strings such that
+each group contains exactly K characters, except for the first group which
+could be shorter than K, but still must contain at least one character.
+Furthermore, there must be a dash inserted between two groups and all
+lowercase letters should be converted to uppercase. Given a non-empty string
+S and a number K, format the string according to the rules described above.
+
+Input: S = "5F3Z-2e-9-w", K = 4 Output: "5F3Z-2E9W"
+
+Explanation: The string S has been split into two parts, each part has 4
+characters. Note that the two extra dashes are not needed and can be removed.
+
+[483] Smallest Good Base Hard
+For an integer n, we call k>=2 a good base of n, if all digits of n base k
+are 1. Now given a string representing n, you should return the smallest good
+base of n in string format.
+
+Input: "13" Output: "3" Explanation: 13 base 3 is 111.
+
+[485] Max Consecutive Ones Easy
+Given a binary array, find the maximum number of consecutive 1s in this
+array.
+
+Input: [1,1,0,1,1,1] Output: 3
+
+[486] Predict the Winner Medium
+Given an array of scores that are non-negative integers. Player 1 picks one
+of the numbers from either end of the array followed by the player 2 and then
+player 1 and so on. Each time a player picks a number, that number will not
+be available for the next player. This continues until all the scores have
+been chosen. The player with the maximum score wins.
+Given an array of scores, predict whether player 1 is the winner. You can
+assume each player plays to maximize his score.
+
+Input: [1, 5, 2] Output: False Explanation: Initially, player 1 can choose
+between 1 and 2. If he chooses 2 (or 1), then player 2 can choose from 1 (or
+2) and 5. If player 2 chooses 5, then player 1 will be left with 1 (or 2).
+So, final score of player 1 is 1 + 2 = 3, and player 2 is 5. Hence, player 1
+will never be the winner and you need to return False.
+
+[493] Reverse Pairs Hard
+Given an array nums, we call (i, j) an important reverse pair if i < j and
+nums[i] > 2*nums[j]. You need to return the number of important reverse pairs
+in the given array.
+
+Input: [1,3,2,3,1] Output: 2
+Input: [2,4,3,5,1] Output: 3
+
+The length of the given array will not exceed 50,000. All the numbers in the
+input array are in the range of 32-bit integer.
+
+[494] Target Sum Medium
+You are given a list of non-negative integers, a1, a2, ..., an, and a target,
+S. Now you have 2 symbols + and -. For each integer, you should choose one
+from + and - as its new symbol. Find out how many ways to assign symbols to
+make sum of integers equal to target S.
+
+Input: nums is [1, 1, 1, 1, 1], S is 3. Output: 5
+
+[498] Diagonal Traverse Medium
+Given a matrix of M x N elements (M rows, N columns), return all elements of
+the matrix in diagonal order as shown in the below image.
+
+Input: [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ] Output: [1,2,4,7,5,3,6,8,9]
+
+[501] Find Mode in Binary Search Tree Easy
+Given a binary search tree (BST) with duplicates, find all the mode(s) (the
+most frequently occurred element) in the given BST. Assume a BST is defined
+as follows: The left subtree of a node contains only nodes with keys less
+than or equal to the node's key. The right subtree of a node contains only
+nodes with keys greater than or equal to the node's key. Both the left and
+right subtrees must also be binary search trees. 1 \ 2 / 2 return [2]. Note:
+If a tree has more than one mode, you can return them in any order. Follow
+up: Could you do that without using any extra space? (Assume that the
+implicit stack space incurred due to recursion does not count).
+
+[503] Next Greater Element II Medium
+Given a circular array (the next element of the last element is the first
+element of the array), print the Next Greater Number for every element. The
+Next Greater Number of a number x is the first greater number to its
+traversing-order next in the array, which means you could search circularly
+to find its next greater number. If it doesn't exist, output -1 for this
+number.
+
+Input: [1,2,1] Output: [2,-1,2] Explanation: The first 1's next greater
+number is 2; The number 2 can't find next greater number; The second 1's next
+greater number needs to search circularly, which is also 2.
+
+[506] Relative Ranks Easy
+Given scores of N athletes, find their relative ranks and the people with the
+top three highest scores, who will be awarded medals: "Gold Medal", "Silver
+Medal" and "Bronze Medal".
+
+Input: [5, 4, 3, 2, 1] Output: ["Gold Medal", "Silver Medal", "Bronze Medal",
+"4", "5"] Explanation: The first three athletes got the top three highest
+scores, so they got "Gold Medal", "Silver Medal" and "Bronze Medal". For the
+left two athletes, you just need to output their relative ranks according to
+their scores.
+
+[514] Freedom Trail Hard
+In the video game Fallout 4, the quest "Road to Freedom" requires players to
+reach a metal dial called the "Freedom Trail Ring", and use the dial to spell
+a specific keyword in order to open the door. Given a string ring, which
+represents the code engraved on the outer ring and another string key, which
+represents the keyword needs to be spelled. You need to find the minimum
+number of steps in order to spell all the characters in the keyword.
+Initially, the first character of the ring is aligned at 12:00 direction. You
+need to spell all the characters in the string key one by one by rotating the
+ring clockwise or anticlockwise to make each character of the string key
+aligned at 12:00 direction and then by pressing the center button. At the
+stage of rotating the ring to spell the key character key[i]: You can rotate
+the ring clockwise or anticlockwise one place, which counts as 1 step. The
+final purpose of the rotation is to align one of the string ring's characters
+at the 12:00 direction, where this character must equal to the character
+key[i]. If the character key[i] has been aligned at the 12:00 direction, you
+need to press the center button to spell, which also counts as 1 step. After
+the pressing, you could begin to spell the next character in the key (next
+stage), otherwise, you've finished all the spelling.
+Input: ring = "godding", key = "gd" Output: 4 Explanation: For the first key
+character 'g', since it is already in place, we just need 1 step to spell
+this character. For the second key character 'd', we need to rotate the ring
+"godding" anticlockwise by two steps to make it become "ddinggo". Also, we
+need 1 more step for spelling. So the final output is 4.
+Length of both ring and key will be in range 1 to 100. There are only
+lowercase letters in both strings and might be some duplcate characters in
+both strings. It's guaranteed that string key could always be spelled by
+rotating the string ring.
+
+[520] Detect Capital Easy
+Given a word, you need to judge whether the usage of capitals in it is right
+or not. We define the usage of capitals in a word to be right when one of the
+following cases holds: All letters in this word are capitals, like "USA". All
+letters in this word are not capitals, like "leetcode". Only the first letter
+in this word is capital if it has more than one letter, like "Google".
+Otherwise, we define that this word doesn't use capitals in a right way.
+
+[521] Longest Uncommon Subsequence I Easy
+Given a group of two strings, you need to find the longest uncommon
+subsequence of this group of two strings. The longest uncommon subsequence is
+defined as the longest subsequence of one of these strings and this
+subsequence should not be any subsequence of the other strings. A subsequence
+is a sequence that can be derived from one sequence by deleting some
+characters without changing the order of the remaining elements. Trivially,
+any string is a subsequence of itself and an empty string is a subsequence of
+any string. The input will be two strings, and the output needs to be the
+length of the longest uncommon subsequence. If the longest uncommon
+subsequence doesn't exist, return -1.
+
+[523] Continuous Subarray Sum Medium
+Given a list of non-negative numbers and a target integer k, write a function
+to check if the array has a continuous subarray of size at least 2 that sums
+up to the multiple of k, that is, sums up to n*k where n is also an integer.
+
+Input: [23, 2, 4, 6, 7], k=6 Output: True Explanation: Because [2, 4] is a
+continuous subarray of size 2 and sums up to 6.
+
+[524] Longest Word in Dictionary through Deleting Medium
+Given a string and a string dictionary, find the longest string in the
+dictionary that can be formed by deleting some characters of the given
+string. If there are more than one possible results, return the longest word
+with the smallest lexicographical order. If there is no possible result,
+return the empty string.
+
+Input: s = "abpcplea", d = ["ale","apple","monkey","plea"]
+
+[525] Contiguous Array Medium
+Given a binary array, find the maximum length of a contiguous subarray with
+equal number of 0 and 1.
+
+Input: [0,1] Output: 2 Explanation: [0, 1] is the longest contiguous subarray
+with equal number of 0 and 1.
+
+[526] Beautiful Arrangement Medium
+Suppose you have N integers from 1 to N. We define a beautiful arrangement as
+an array that is constructed by these N numbers successfully if one of the
+following is true for the ith position (1 <= i <= N) in this array:
+The number at the ith position is divisible by i. i is divisible by the
+number at the ith position.
+Now given N, how many beautiful arrangements can you construct?
+
+Input: 2 Output: 2
+
+[530] Minimum Absolute Difference in BST Easy
+Given a binary search tree with non-negative values, find the minimum
+absolute difference between values of any two nodes.
+
+Input: 1 \ 3 / 2 Output: 1
+
+[535] Encode and Decode TinyURL Medium
+Design the encode and decode methods for the TinyURL service. There is no
+restriction on how your encode/decode algorithm should work. You just need to
+ensure that a URL can be encoded to a tiny URL and the tiny URL can be
+decoded to the original URL.
+
+[541] Reverse String II Easy
+Given a string and an integer k, you need to reverse the first k characters
+for every 2k characters counting from the start of the string. If there are
+less than k characters left, reverse all of them. If there are less than 2k
+but greater than or equal to k characters, then reverse the first k
+characters and left the other as original.
+
+Input: s = "abcdefg", k = 2 Output: "bacdfeg"
+
+[543] Diameter of Binary Tree Easy
+Given a binary tree, you need to compute the length of the diameter of the
+tree. The diameter of a binary tree is the length of the longest path between
+any two nodes in a tree. This path may or may not pass through the root.
+Example: Given a binary tree 1 / \ 2 3 / \ 4 5
+Return 3, which is the length of the path [4,2,1,3] or [5,2,1,3].
+
+
+[551] Student Attendance Record I Easy
+You are given a string representing an attendance record for a student. The
+record only contains the following three characters:
+'A' : Absent. 'L' : Late. 'P' : Present.
+A student could be rewarded if his attendance record doesn't contain more
+than one 'A' (absent) or more than two continuous 'L' (late).
+You need to return whether the student could be rewarded according to his
+attendance record.
+
+Input: "PPALLP" Output: True
+
+[552] Student Attendance Record II Hard
+Given a positive integer n, return the number of all possible attendance
+records with length n, which will be regarded as rewardable. The answer may
+be very large, return it after mod 109 + 7.
+
+A student attendance record is a string that only contains the following
+three characters:
+'A' : Absent. 'L' : Late. 'P' : Present.
+A record is regarded as rewardable if it doesn't contain more than one 'A'
+(absent) or more than two continuous 'L' (late).
+
+Input: n = 2 Output: 8 Explanation: There are 8 records with length 2 will be
+regarded as rewardable: "PP" , "AP", "PA", "LP", "PL", "AL", "LA", "LL" Only
+"AA" won't be regarded as rewardable owing to more than one absent times.
+
+[554] Brick Wall Medium
+There is a brick wall in front of you. The wall is rectangular and has
+several rows of bricks. The bricks have the same height but different width.
+You want to draw a vertical line from the top to the bottom and cross the
+least bricks. The brick wall is represented by a list of rows. Each row is a
+list of integers representing the width of each brick in this row from left
+to right. If your line go through the edge of a brick, then the brick is not
+considered as crossed. You need to find out how to draw the line to cross the
+least bricks and return the number of crossed bricks. You cannot draw a line
+just along one of the two vertical edges of the wall, in which case the line
+will obviously cross no bricks.
+
+Input: [[1,2,2,1], [3,1,2], [1,3,2], [2,4], [3,1,2], [1,3,1,1]] Output: 2
+
+[560] Subarray Sum Equals K Medium
+Given an array of integers and an integer k, you need to find the total
+number of continuous subarrays whose sum equals to k.
+
+Input:nums = [1,1,1], k = 2 Output: 2
+
+[572] Subtree of Another Tree Easy
+Given two non-empty binary trees s and t, check whether tree t has exactly
+the same structure and node values with a subtree of s. A subtree of s is a
+tree consists of a node in s and all of this node's descendants. The tree s
+could also be considered as a subtree of itself.
+
+Given tree s: 3 / \ 4 5 / \ 1 2 Given tree t: 4 / \ 1 2
+Return true, because t has the same structure and node values with a subtree
+of s.
+
+[581] Shortest Unsorted Continuous Subarray Easy
+Given an integer array, you need to find one continuous subarray that if you
+only sort this subarray in ascending order, then the whole array will be
+sorted in ascending order, too.
+You need to find the shortest such subarray and output its length.
+
+Input: [2, 6, 4, 8, 10, 9, 15] Output: 5 Explanation: You need to sort [6, 4,
+8, 10, 9] in ascending order to make the whole array sorted in ascending
+order.
+
+[587] Erect the Fence Hard
+There are some trees, where each tree is represented by (x,y) coordinate in a
+two-dimensional garden. Your job is to fence the entire garden using the
+minimum length of rope as it is expensive. The garden is well fenced only if
+all the trees are enclosed. Your task is to help find the coordinates of
+trees which are exactly located on the fence perimeter.
+All trees should be enclosed together. You cannot cut the rope to enclose
+trees that will separate them in more than one group. All input integers will
+range from 0 to 100. The garden has at least one tree. All coordinates are
+distinct. Input points have NO order. No order required for output.
+
+Input: [[1,1],[2,2],[2,0],[2,4],[3,3],[4,2]] Output:
+[[1,1],[2,0],[4,2],[3,3],[2,4]] Explanation:
+Input: [[1,2],[2,2],[4,2]] Output: [[1,2],[2,2],[4,2]] Explanation:
+Even you only have trees in a line, you need to use rope to enclose them.
+
+[606] Construct String from Binary Tree Easy
+You need to construct a string consists of parenthesis and integers from a
+binary tree with the preorder traversing way. The null node needs to be
+represented by empty parenthesis pair "()". And you need to omit all the
+empty parenthesis pairs that don't affect the one-to-one mapping relationship
+between the string and the original binary tree.
+
+Input: Binary tree: [1,2,3,4] 1 / \ 2 3 / 4
+Output: "1(2(4))(3)" Explanation: Originallay it needs to be
+"1(2(4)())(3()())", but you need to omit all the unnecessary empty
+parenthesis pairs. And it will be "1(2(4))(3)".
+
+[621] Task Scheduler Medium
+Given a char array representing tasks CPU need to do. It contains capital
+letters A to Z where different letters represent different tasks. Tasks could
+be done without original order. Each task could be done in one interval. For
+each interval, CPU could finish one task or just be idle. However, there is a
+non-negative cooling interval n that means between two same tasks, there must
+be at least n intervals that CPU are doing different tasks or just be idle.
+You need to return the least number of intervals the CPU will take to finish
+all the given tasks.
+
+[636] Exclusive Time of Functions Medium
+On a single threaded CPU, we execute some functions. Each function has a
+unique id between 0 and N-1. We store logs in timestamp order that describe
+when a function is entered or exited. Each log is a string with this format:
+"{function_id}:{"start" | "end"}:{timestamp}". For example, "0:start:3" means
+the function with id 0 started at the beginning of timestamp 3. "1:end:2"
+means the function with id 1 ended at the end of timestamp 2. A function's
+exclusive time is the number of units of time spent in this function. Note
+that this does not include any recursive calls to child functions. Return the
+exclusive time of each function, sorted by their function id.
+
+[637] Average of Levels in Binary Tree Easy
+Given a non-empty binary tree, return the average value of the nodes on each
+level in the form of an array.
+
+Input: 3 / \ 9 20 / \ 15 7 Output: [3, 14.5, 11] Explanation: The average
+value of nodes on level 0 is 3, on level 1 is 14.5, and on level 2 is 11.
+Hence return [3, 14.5, 11].
+
+[639] Decode Ways II Hard
+A message containing letters from A-Z is being encoded to numbers using the
+following mapping way: 'A' -> 1 'B' -> 2 ... 'Z' -> 26 Beyond that, now the
+encoded string can also contain the character '*', which can be treated as
+one of the numbers from 1 to 9. Given the encoded message containing digits
+and the character '*', return the total number of ways to decode it. Also,
+since the answer may be very large, you should return the output mod 109 + 7.
+
+Input: "*" Output: 9 Explanation: The encoded message can be decoded to the
+string: "A", "B", "C", "D", "E", "F", "G", "H", "I".
+
+[640] Solve the Equation Medium
+Solve a given equation and return the value of x in the form of string
+"x=#value". The equation contains only '+', '-' operation, the variable x and
+its coefficient. If there is no solution for the equation, return "No
+solution". If there are infinite solutions for the equation, return "Infinite
+solutions". If there is exactly one solution for the equation, we ensure that
+the value of x is an integer.
+
+Input: "x+5-3+x=6+x-2" Output: "x=2"
+Input: "x=x" Output: "Infinite solutions"
+Input: "2x=x" Output: "x=0"
+
+[643] Maximum Average Subarray I Easy
+Given an array consisting of n integers, find the contiguous subarray of
+given length k that has the maximum average value. And you need to output the
+maximum average value.
+
+Input: [1,12,-5,-6,50,3], k = 4 Output: 12.75 Explanation: Maximum average is
+(12-5-6+50)/4 = 51/4 = 12.75
+
+[647] Palindromic Substrings Medium
+Given a string, your task is to count how many palindromic substrings in this
+string. The substrings with different start indexes or end indexes are
+counted as different substrings even they consist of same characters.
+
+Input: "abc" Output: 3 Explanation: Three palindromic strings: "a", "b", "c".
+Input: "aaa" Output: 6 Explanation: Six palindromic strings: "a", "a", "a",
+"aa", "aa", "aaa".
+
+[652] Find Duplicate Subtrees Medium
+Given a binary tree, return all duplicate subtrees. For each kind of
+duplicate subtrees, you only need to return the root node of any one of them.
+Two trees are duplicate if they have the same structure with same node
+values.
+
+[653] Two Sum IV - Input is a BST Easy
+Given a Binary Search Tree and a target number, return true if there exist
+two elements in the BST such that their sum is equal to the given target.
+
+Input: 5 / \ 3 6 / \ \ 2 4 7 Target = 9 Output: True
+Input: 5 / \ 3 6 / \ \ 2 4 7 Target = 28 Output: False
+
+[654] Maximum Binary Tree Medium
+Given an integer array with no duplicates. A maximum tree building on this
+array is defined as follow: The root is the maximum number in the array. The
+left subtree is the maximum tree constructed from left part subarray divided
+by the maximum number. The right subtree is the maximum tree constructed from
+right part subarray divided by the maximum number. Construct the maximum tree
+by the given array and output the root node of this tree.
+
+Input: [3,2,1,6,0,5] Output: return the tree root node representing the
+following tree: 6 / \ 3 5 \ / 2 0 \ 1
+
+[657] Robot Return to Origin Easy
+There is a robot starting at position (0, 0), the origin, on a 2D plane.
+Given a sequence of its moves, judge if this robot ends up at (0, 0) after it
+completes its moves. The move sequence is represented by a string, and the
+character moves[i] represents its ith move. Valid moves are R (right), L
+(left), U (up), and D (down). If the robot returns to the origin after it
+finishes all of its moves, return true. Otherwise, return false. Note: The
+way that the robot is "facing" is irrelevant. "R" will always make the robot
+move to the right once, "L" will always make it move left, etc. Also, assume
+that the magnitude of the robot's movement is the same for each move.
+
+[658] Find K Closest Elements Medium
+Given a sorted array, two integers k and x, find the k closest elements to x
+in the array. The result should also be sorted in ascending order. If there
+is a tie, the smaller elements are always preferred.
+
+Input: [1,2,3,4,5], k=4, x=3 Output: [1,2,3,4]
+Input: [1,2,3,4,5], k=4, x=-1 Output: [1,2,3,4]
+
+[659] Split Array into Consecutive Subsequences Medium
+You are given an integer array sorted in ascending order (may contain
+duplicates), you need to split them into several subsequences, where each
+subsequences consist of at least 3 consecutive integers. Return whether you
+can make such a split.
+
+Input: [1,2,3,3,4,5] Output: True Explanation: You can split them into two
+consecutive subsequences : 1, 2, 3 3, 4, 5
+
+[665] Non-decreasing Array Easy
+Given an array with n integers, your task is to check if it could become
+non-decreasing by modifying at most 1 element. We define an array is
+non-decreasing if array[i] holds for every i (1
+
+Input: [4,2,3] Output: True Explanation: You could modify the first 4 to 1 to
+get a non-decreasing array.
+Input: [4,2,1] Output: False Explanation: You can't get a non-decreasing
+array by modify at most one element.
+
+[668] Kth Smallest Number in Multiplication Table Hard
+Nearly every one have used the Multiplication Table. But could you find out
+the k-th smallest number quickly from the multiplication table?
+Given the height m and the length n of a m * n Multiplication Table, and a
+positive integer k, you need to return the k-th smallest number in this
+table.
+
+Input: m = 3, n = 3, k = 5 Output: Explanation: The Multiplication Table: 1 2
+3 2 4 6 3 6 9 The 5-th smallest number is 3 (1, 2, 2, 3, 3).
+
+[670] Maximum Swap Medium
+Given a non-negative integer, you could swap two digits at most once to get
+the maximum valued number. Return the maximum valued number you could get.
+
+Input: 2736 Output: 7236 Explanation: Swap the number 2 and the number 7.
+
+[673] Number of Longest Increasing Subsequence Medium
+Given an unsorted array of integers, find the number of longest increasing
+subsequence.
+
+Input: [1,3,5,4,7] Output: 2 Explanation: The two longest increasing
+subsequence are [1, 3, 4, 7] and [1, 3, 5, 7].
+Input: [2,2,2,2,2] Output: 5 Explanation: The length of longest continuous
+increasing subsequence is 1, and there are 5 subsequences' length is 1, so
+output 5.
+
+[674] Longest Continuous Increasing Subsequence Easy
+Given an unsorted array of integers, find the length of longest continuous
+increasing subsequence (subarray).
+
+Input: [1,3,5,4,7] Output: 3 Explanation: The longest continuous increasing
+subsequence is [1,3,5], its length is 3. Even though [1,3,5,7] is also an
+increasing subsequence, it's not a continuous one where 5 and 7 are separated
+by 4.
+
+[676] Implement Magic Dictionary Medium
+Implement a magic directory with buildDict, and search methods. For the
+method buildDict, you'll be given a list of non-repetitive words to build a
+dictionary. For the method search, you'll be given a word, and judge whether
+if you modify exactly one character into another character in this word, the
+modified word is in the dictionary you just built.
+
+Input: buildDict(["hello", "leetcode"]), Output: Null Input: search("hello"),
+Output: False Input: search("hhllo"), Output: True Input: search("hell"),
+Output: False Input: search("leetcoded"), Output: False
+
+[679] 24 Game Hard
+You have 4 cards each containing a number from 1 to 9. You need to judge
+whether they could operated through *, /, +, -, (, ) to get the value of 24.
+Input: [4, 1, 8, 7] Output: True Explanation: (8-4) * (7-1) = 24
+Input: [1, 2, 1, 2] Output: False
+
+[680] Valid Palindrome II Easy
+Given a non-empty string s, you may delete at most one character. Judge
+whether you can make it a palindrome.
+
+[684] Redundant Connection Medium
+In this problem, a tree is an undirected graph that is connected and has no
+cycles. The given input is a graph that started as a tree with N nodes (with
+distinct values 1, 2, ..., N), with one additional edge added. The added edge
+has two different vertices chosen from 1 to N, and was not an edge that
+already existed.
+
+The resulting graph is given as a 2D-array of edges. Each element of edges is
+a pair [u, v] with u < v, that represents an undirected edge connecting nodes
+u and v.
+
+Return an edge that can be removed so that the resulting graph is a tree of N
+nodes. If there are multiple answers, return the answer that occurs last in
+the given 2D-array. The answer edge [u, v] should be in the same format, with
+u < v. Example 1:
+
+Input: [[1,2], [1,3], [2,3]] Output: [2,3] Explanation: The given undirected
+graph will be like this: 1 / \ 2 - 3
+Input: [[1,2], [2,3], [3,4], [1,4], [1,5]] Output: [1,4] Explanation: The
+given undirected graph will be like this: 5 - 1 - 2 | | 4 - 3
+
+[685] Redundant Connection II Hard
+In this problem, a rooted tree is a directed graph such that, there is
+exactly one node (the root) for which all other nodes are descendants of this
+node, plus every node has exactly one parent, except for the root node which
+has no parents. The given input is a directed graph that started as a rooted
+tree with N nodes (with distinct values 1, 2, ..., N), with one additional
+directed edge added. The added edge has two different vertices chosen from 1
+to N, and was not an edge that already existed. The resulting graph is given
+as a 2D-array of edges. Each element of edges is a pair [u, v] that
+represents a directed edge connecting nodes u and v, where u is a parent of
+child v. Return an edge that can be removed so that the resulting graph is a
+rooted tree of N nodes. If there are multiple answers, return the answer that
+occurs last in the given 2D-array. Example 1:
+
+Input: [[1,2], [1,3], [2,3]] Output: [2,3] Explanation: The given directed
+graph will be like this: 1 / \ v v 2-->3
+
+[686] Repeated String Match Easy
+Given two strings A and B, find the minimum number of times A has to be
+repeated such that B is a substring of it. If no such solution, return -1.
+For example, with A = "abcd" and B = "cdabcdab". Return 3, because by
+repeating A three times (“abcdabcdabcd”), B is a substring of it; and B is
+not a substring of A repeated two times ("abcdabcd"). Note: The length of A
+and B will be between 1 and 10000.
+
+[687] Longest Univalue Path Easy
+Given a binary tree, find the length of the longest path where each node in
+the path has the same value. This path may or may not pass through the root.
+The length of path between two nodes is represented by the number of edges
+between them.
+
+Input: 5 / \ 4 5 / \ \ 1 1 5 Output: 2
+
+[689] Maximum Sum of 3 Non-Overlapping Subarrays Hard
+In a given array nums of positive integers, find three non-overlapping
+subarrays with maximum sum.
+Each subarray will be of size k, and we want to maximize the sum of all 3*k
+entries.
+Return the result as a list of indices representing the starting position of
+each interval (0-indexed). If there are multiple answers, return the
+lexicographically smallest one.
+
+Example:
+
+Input: [1,2,1,2,6,7,5,1], 2 Output: [0, 3, 5] Explanation: Subarrays [1, 2],
+[2, 6], [7, 5] correspond to the starting indices [0, 3, 5]. We could have
+also taken [2, 1], but an answer of [1, 3, 5] would be lexicographically
+larger.
+
+[696] Count Binary Substrings Easy
+Give a string s, count the number of non-empty (contiguous) substrings that
+have the same number of 0's and 1's, and all the 0's and all the 1's in these
+substrings are grouped consecutively. Substrings that occur multiple times
+are counted the number of times they occur.
+
+Input: "00110011" Output: 6 Explanation: There are 6 substrings that have
+equal number of consecutive 1's and 0's: "0011", "01", "1100", "10", "0011",
+and "01". Notice that some of these substrings repeat and are counted the
+number of times they occur. Also, "00110011" is not a valid substring because
+all the 0's (and 1's) are not grouped together.
+
+[714] Best Time to Buy and Sell Stock with Transaction Fee Medium
+Your are given an array of integers prices, for which the i-th element is the
+price of a given stock on day i; and a non-negative integer fee representing
+a transaction fee. You may complete as many transactions as you like, but you
+need to pay the transaction fee for each transaction. You may not buy more
+than 1 share of a stock at a time (ie. you must sell the stock share before
+you buy again.) Return the maximum profit you can make.
+
+Input: prices = [1, 3, 2, 8, 4, 9], fee = 2 Output: 8 Explanation: The
+maximum profit can be achieved by: Buying at prices[0] = 1Selling at
+prices[3] = 8Buying at prices[4] = 4Selling at prices[5] = 9The total profit
+is ((8 - 1) - 2) + ((9 - 4) - 2) = 8.
+
+[719] Find K-th Smallest Pair Distance Hard
+Given an integer array, return the k-th smallest distance among all the
+pairs. The distance of a pair (A, B) is defined as the absolute difference
+between A and B.
+
+Input: nums = [1,3,1] k = 1 Output: 0 Explanation: Here are all the pairs:
+(1,3) -> 2 (1,1) -> 0 (3,1) -> 2 Then the 1st smallest distance pair is
+(1,1), and its distance is 0.
+
+[720] Longest Word in Dictionary Easy
+Given a list of strings words representing an English Dictionary, find the
+longest word in words that can be built one character at a time by other
+words in words. If there is more than one possible answer, return the longest
+word with the smallest lexicographical order. If there is no answer, return
+the empty string.
+
+Input: words = ["w","wo","wor","worl", "world"] Output: "world" Explanation:
+The word "world" can be built one character at a time by "w", "wo", "wor",
+and "worl".
+
+[721] Accounts Merge Medium
+Given a list accounts, each element accounts[i] is a list of strings, where
+the first element accounts[i][0] is a name, and the rest of the elements are
+emails representing emails of the account.
+
+Now, we would like to merge these accounts. Two accounts definitely belong to
+the same person if there is some email that is common to both accounts. Note
+that even if two accounts have the same name, they may belong to different
+people as people could have the same name. A person can have any number of
+accounts initially, but all of their accounts definitely have the same name.
+
+After merging the accounts, return the accounts in the following format: the
+first element of each account is the name, and the rest of the elements are
+emails in sorted order. The accounts themselves can be returned in any order.
+
+
+[726] Number of Atoms Hard
+Given a chemical formula (given as a string), return the count of each atom.
+An atomic element always starts with an uppercase character, then zero or
+more lowercase letters, representing the name.
+1 or more digits representing the count of that element may follow if the
+count is greater than 1. If the count is 1, no digits will follow. For
+example, H2O and H2O2 are possible, but H1O2 is impossible.
+Two formulas concatenated together produce another formula. For example,
+H2O2He3Mg4 is also a formula.
+A formula placed in parentheses, and a count (optionally added) is also a
+formula. For example, (H2O2) and (H2O2)3 are formulas.
+Given a formula, output the count of all elements as a string in the
+following form: the first name (in sorted order), followed by its count (if
+that count is more than 1), followed by the second name (in sorted order),
+followed by its count (if that count is more than 1), and so on.
+
+Input: formula = "H2O" Output: "H2O" Explanation: The count of elements are
+{'H': 2, 'O': 1}.
+
+[787] Cheapest Flights Within K Stops Medium
+There are n cities connected by m flights. Each fight starts from city u and
+arrives at v with a price w.
+Now given all the cities and flights, together with starting city src and the
+destination dst, your task is to find the cheapest price from src to dst with
+up to k stops. If there is no such route, output -1.
+
+Example 1: Input: n = 3, edges = [[0,1,100],[1,2,100],[0,2,500]] src = 0, dst
+= 2, k = 1 Output: 200 Explanation: The graph looks like this:
+
+[862] Shortest Subarray with Sum at Least K Hard
+Return the length of the shortest, non-empty, contiguous subarray of A with
+sum at least K. If there is no non-empty subarray with sum at least K, return
+-1.
+
+Input: A = [1], K = 1 Output: 1
