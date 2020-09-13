@@ -1,5 +1,5 @@
 # Algorithms
 
-This contains my answers to various programming contests as well as some 
-reference algorithms.
+This contains my solutions to leetcode problems, implementation of 
+reference algorithms, and various notes.
 
