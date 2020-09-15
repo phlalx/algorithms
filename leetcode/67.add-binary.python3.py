@@ -31,3 +31,24 @@ class Solution:
         if carry:
             res.append("1")
         return "".join(reversed(res))
+
+
+# Better solution
+from itertools import zip_longest
+
+class Solution:
+    def addBinary(self, a: str, b: str) -> str:
+        cr = 0
+        res = []
+        for b1, b2 in zip_longest(reversed(a), reversed(b), fillvalue='0'):
+            b1 = int(b1)
+            b2 = int(b2)
+            x = int(b1) + int(b2) + cr
+            cr = x // 2
+            res.append(str(x % 2))
+        if cr:
+            res.append(str(cr))
+        return ''.join(reversed(res))
+
+
+

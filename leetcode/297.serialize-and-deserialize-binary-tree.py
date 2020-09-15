@@ -1,4 +1,7 @@
-#TAGS tree, dfs
+#TAGS tree, dfs, parsing
+# prefix/postfix order can be used to serialize a tree without ambiguity
+# parsing can be done with a stack
+# see variant: serialize bst: no need to store null pointers
 
 class Codec:
 

@@ -21,5 +21,14 @@ class Solution:
         return True 
 
 
-
-        
+# simpler but using more memory
+class Solution:
+    def isAlienSorted(self, words: List[str], order: str) -> bool:
+        d = { c: i for i, c in enumerate(order)}
+        def f(w):
+            return [d[c] for c in w]
+        words = [ f(w) for w in words ]
+        for w, ww in zip(words, words[1:]):
+            if not w <= ww:
+                return False
+        return True 

@@ -105,6 +105,8 @@ def fibo(x):
 # e.g. reversed need a __reversed__ methods or a __getitem__, __len__
 # (sequence protocol)
 
+itertools.zip_longest(a, b, c, fillvalue=...)
+
 # dict comprehension
 
 { l : 0 for l in string.ascii_lowercase }
@@ -207,3 +209,10 @@ bin(100).count('1')
 
 a, b == c, d
 # is not the same as   (a, b) == (c, d)
+
+# Strings
+
+```
+'13'.zfill(5) -> 0
+'toto'.rjust(10, ' ') -> '    toto'
+```
