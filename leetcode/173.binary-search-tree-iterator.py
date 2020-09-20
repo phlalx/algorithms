@@ -9,42 +9,65 @@
 #         self.right = None
 
 
-class BSTIterator(object):
-    def __init__(self, root):
-        """
-        :type root: TreeNode
-        """
-        self.cur = root  # next subtree to process
-        self.branch = []  # stack of nodes to process after dealing with cur
+def push_left(st, node):
+    while node:
+        st.append(node)
+        node = node.left
 
-        # stack up all the left-most branch
-        while self.cur:
-            self.branch.append(self.cur)
-            self.cur = self.cur.left
+class BSTIterator:
 
-    def hasNext(self):
-        """
-        :rtype: bool
-        """
-        return self.branch
+    def __init__(self, root: TreeNode):
+        self.st = []
+        push_left(self.st, root)
 
-    def next(self):
-        """
-        :rtype: int
-        """
-        # stack up all the left-most branch
-        n = self.branch.pop()
 
-        self.cur = n.right
+    def next(self) -> int:
+        """
+        @return the next smallest number
+        """
+        n = self.st.pop()
         res = n.val
-
-        while self.cur:
-            self.branch.append(self.cur)
-            self.cur = self.cur.left
-
+        if n.right:
+            push_left(self.st, n.right)
         return res
 
+    def hasNext(self) -> bool:
+        """
+        @return whether we have a next smallest number
+        """
+        return bool(self.st)
 
-# Your BSTIterator will be called like this:
-# i, v = BSTIterator(root), []
-# while i.hasNext(): v.append(i.next())
+# Another cool solution (but more complicated)
+# 
+# def bst_min(root):
+#   while root.left:
+#     root = root.left
+#   return root
+# 
+# def successor(root, node):
+#   if node.right:
+#     return bst_min(node.right)
+#   res = None
+#   cur = root
+#   while cur is not node:
+#     if node.val <= cur.val :
+#       res = cur
+#       cur = cur.left
+#     else:
+#       cur = cur.right
+#   return res
+# 
+# class BSTIterator:
+# 
+#     def __init__(self, root: TreeNode):
+#       self.root = root
+#       self.cur = bst_min(root) if root else None
+# 
+#     def next(self) -> int:
+#       res = self.cur.val
+#       self.cur = successor(self.root, self.cur)
+#       return res
+# 
+#     def hasNext(self) -> bool:
+#       return self.cur is not None
+# 
