@@ -93,6 +93,17 @@ class Solution:
                 sign = v - u
         return True
 
+class Solution:
+    def isMonotonic(self, A: List[int]) -> bool:
+        inc = False
+        dec = False
+        for c, cc in zip(A, A[1:]):
+            if c < cc:
+                inc = True
+            elif c > cc:
+                dec = True
+        return not (inc and dec)
+
         
 # @lc code=end
 
