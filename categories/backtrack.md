@@ -1,11 +1,11 @@
 # Backtracking
 
 Build a set of solutions by dfs an implicit tree. Each solution is a leaf
-of the tree, and can be constructed step by step by traversing the pathi
+of the tree, and can be constructed step by step by traversing the path
 from the root to the leaf.
 
 This can be seen as brute force approach where constraints on the solutions
-allow us to ignore some sub-trees.
+allow us to prune some sub-trees.
 
 ## Applications
 

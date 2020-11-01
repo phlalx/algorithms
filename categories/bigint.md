@@ -16,7 +16,6 @@ def sum(num1, num2):
         res.append(str(d))
     if carry:
         res.append(str(carry))
-    print(res)
     return "".join(reversed(res))
 ```
 
@@ -25,7 +24,7 @@ def sum(num1, num2):
 ### digit mult
 
 ```
-def mult(num, dig
+def mult(num, digit):
     res = []
     carry = 0
     for d in reversed(num):
@@ -33,7 +32,7 @@ def mult(num, dig
         a = r % 10
         carry = (r - a) // 10
         res.append(a)
-    if carry:   
+    if carry:
         res.append(carry)
    return list(reversed(res))
 ```

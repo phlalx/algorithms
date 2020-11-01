@@ -1,8 +1,21 @@
 
+# Arrays
+
+Wide range of problems. Scanning, DP, double pointers, divide and conquer,
+sliding window.
+
+## Scanning
+
+Scan array from left to right, store seen elements in some structure, and
+perform a search in the structure.
+
+### Examples
+
+* 2-sum
+    - store elements in set, and lookup `target - cur` in seen
+    - many variants
+* 493 ?
+
+### References
+
 https://leetcode.com/problems/reverse-pairs/discuss/97268/General-principles-behind-problems-similar-to-%22Reverse-Pairs%22
- -> regarder les autres blogs de cet auteur
-
-493
-
-Plein de problèmes ont la même structure. On parcourt le tableau et on mémorise les éléments déjà parcouru dans une structure
-adaptée  : hash, BST, pile etc…
