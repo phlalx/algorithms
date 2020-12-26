@@ -8,6 +8,8 @@
 # Complexity: 2^n * n (number of substrings * time to check if it is balanced)
 # TODO too slow
 
+# check https://leetcode.com/problems/remove-invalid-parentheses/discuss/75028/Short-Python-BFS
+
 from collections import deque
 
 

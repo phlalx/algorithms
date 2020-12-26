@@ -7,7 +7,7 @@
 NINETEEN = 'One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve Thirteen Fourteen Fifteen Sixteen Seventeen Eighteen Nineteen'.split()
 HUNDRED = 'Twenty Thirty Forty Fifty Sixty Seventy Eighty Ninety'.split()
 
-def f(n):
+def f(n) -> List[str]:
   if n >= 10 ** 9:
     a, b = divmod(n, 10 ** 9)
     return f(a) + ['Billion'] + f(b)

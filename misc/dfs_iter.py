@@ -9,7 +9,7 @@ def dfs(graph):
   def dfs_visit(node):
     nonlocal seen, back_edge, forward_cross_edge, tree_edge
     next = [node]
-    seen[node] = 1
+    seen[node] = 1  # mark as seen before when pushed to next
     while next:
       s = next.pop()
       print(s, ' ', end = '')

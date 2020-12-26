@@ -53,3 +53,26 @@ class Solution:
                 res.add(vec)
 
         return [list(x) for x in res]
+
+# my solution beats 97%
+from collections import Counter
+
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        c = Counter(nums)
+        new_nums = []
+        for num, count in c.items():
+            new_nums.extend([num] * min(count, 3))
+        nums = new_nums
+        n = len(nums)
+        seen = set()
+        res = set()
+        for i, a in enumerate(nums):
+            a = nums[i]
+            for j in range(i+1,n):
+                b = nums[j]
+                if -(a+b) in seen:
+                    res.add(tuple(sorted([a,b,-a-b])))
+
+            seen.add(nums[i])
+        return list(res)

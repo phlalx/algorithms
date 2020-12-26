@@ -1,29 +1,20 @@
 # TAGS palindrome
 
-import string
-
-
-def isalphanum(s):
-    return s in string.ascii_letters or s in string.digits
-
-
 class Solution:
-    def isPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
+    def isPalindrome(self, s: str) -> bool:
+        n = len(s)
         i = 0
-        j = len(s) - 1
+        j = n-1
         while i < j:
-            if not isalphanum(s[i]):
-                i = i + 1
-                continue
-            if not isalphanum(s[j]):
-                j = j - 1
-                continue
-            if s[i].lower() != s[j].lower():
+            si = s[i]
+            sj = s[j]
+            if not si.isalnum():
+                i += 1
+            elif not sj.isalnum():
+                j -= 1
+            elif si.lower() == sj.lower():
+                i += 1
+                j -= 1
+            else:
                 return False
-            i = i + 1
-            j = j - 1
         return True

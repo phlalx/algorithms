@@ -49,3 +49,44 @@ class Solution:
         n = len(grid[0])
         grid = [[grid[i][j] == "1" for j in range(n)] for i in range(m)]
         return countIsland(grid)
+
+
+class UF:
+    def __init__(self, n, count):
+        self.p = list(range(n))
+        self.r = [ 0 ] * n
+        self.count = count
+
+def find(uf, i):
+    if i == uf.p[i]:
+        return i
+    res = find(uf, uf.p[i])
+    uf.p[i] = res  # optim
+    return res
+
+def union(uf, i, j):
+    i, j = find(uf, i), find(uf, j)
+    if i == j:
+        return
+    uf.count -= 1
+    if uf.r[i] > uf.r[j]: # rank optim
+        uf.p[j] = i
+    else:  # rank optim
+        uf.p[i] = j
+        uf.r[j] = max(uf.r[j], 1 + uf.r[i])
+
+# class Solution:
+#     def numIslands(self, grid: List[List[str]]) -> int:
+#         n = len(grid)
+#         p = len(grid[0])
+#         count = sum(grid[i][j] == "1" for i in range(n) for j in range(p))
+#         uf = UF(n * p, count)
+#         f = lambda i, j: i * p + j
+#         for i in range(n):
+#             for j in range(p):
+#                 if grid[i][j] == "1":
+#                     if j + 1 < p and grid[i][j+1] == "1":
+#                         union(uf, f(i, j), f(i, j+1))
+#                     if i + 1 < n and grid[i+1][j] == "1":
+#                         union(uf, f(i, j), f(i+1, j))
+#         return uf.count

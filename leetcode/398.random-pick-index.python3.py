@@ -1,4 +1,4 @@
-# TAGS list, binary search
+# TAGS list, binary search, very cool!
 #
 # Solution 1
 #   . sort while keeping indexes (done once)

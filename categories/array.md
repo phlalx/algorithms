@@ -14,6 +14,7 @@ perform a search in the structure.
 * 2-sum
     - store elements in set, and lookup `target - cur` in seen
     - many variants
+* 523, 974
 * 493 ?
 
 ### References

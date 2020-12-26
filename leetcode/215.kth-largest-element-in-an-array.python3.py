@@ -7,17 +7,19 @@
 import heapq
 
 # inclusive bounds
-def pivot(nums, i, j):
-    p = nums[i]
-    while i != j:
-        assert nums[i] == p
-        if nums[i + 1] <= p:
-            nums[i], nums[i + 1] = nums[i + 1], p
+def pivot(t, a, b):
+    i = a + 1
+    j = b
+    p = t[a]
+    while i <= j:
+        if t[i] <= p:
             i += 1
-        else:
-            nums[j], nums[i + 1] = nums[i + 1], nums[j]
+        elif t[j] > p:
             j -= 1
-    return i
+        else:
+            t[i], t[j] = t[j], t[i]
+    t[i-1], t[a] = t[a], t[i-1]
+    return i - 1
 
 
 def test():
@@ -26,6 +28,15 @@ def test():
     assert nums == [1, 1, 3, 3, 5, 6, 4]
     assert res == 3
 
+# def quickselect(t, a, b, k):
+#     kk = pivot(t, a, b)
+#     pos = a + k
+#     if pos == kk:
+#         return t[kk]
+#     elif pos < kk:
+#         return kselect(t, a, kk-1, k)
+#     else:
+#         return kselect(t, kk+1, b, pos - kk - 1)
 
 def quickselect(nums, k):
 
